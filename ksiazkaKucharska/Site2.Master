@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="ksiazkaKucharska.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Strona głowna</title>
+    <link href='https://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'/>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <a href="HomePage.aspx">
+                <div id="row3">
+               <p style="font-weight: normal; font-family: 'Dosis', sans-serif; color:white; font-size: 9em;">Książka kucharska </p>
+                </div>
+              
+
+            </a>
+
+        </header>
+        <nav>
+            <ul>
+                <li><a href="HomePage.aspx" class="animacja">Strona główna</a></li>
+                <li><a href="NewRecips.aspx" class="animacja">Nowości</a></li>              
+                <asp:Menu class="animacja" ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+                   <DynamicHoverStyle BackColor="#004000" />
+                   <DynamicSelectedStyle BackColor="#004000" />
+                </asp:Menu>
+                <li><a href="AddRecips.aspx" class="animacja">Dodaj przepis</a></li>
+                <li><a href="Advice.aspx" class="animacja">Porady</a></li>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" EnableViewState="False" />
+            </ul>
+        </nav>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <footer style="margin-left:750px;"><br />Copyright by EK</footer>
+    </form>
+</body>
+</html>

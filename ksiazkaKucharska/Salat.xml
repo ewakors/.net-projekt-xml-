@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created: 2016-04-03 18:30:31-->
+<Salat>
+  <Przepis ID="1" Category="Sałatki" Tytul="Ananas z żółtym serem">
+    <Wykonanie>
+      Schłodzony, zimny ser zetrzeć na tarce o dużych oczkach. Osaczonego ananasa posiekać. Oczyszczony czosnek również posiekać.
+      Wymieszać ser z ananasem, czosnkiem, posiekana natką oraz majonezem. Przykryć salaterkę i odstawić n a60 minut. Przed podaniem ew. posolić.
+    </Wykonanie>
+    <Ilosc_porcji>6</Ilosc_porcji>
+    <Czas_przygotowania>20min</Czas_przygotowania>
+    <Skladniki>
+      <Nazwa>ser żółty 0.3 kg</Nazwa>
+      <Nazwa>ananas konserwowy 1 puszka</Nazwa>
+      <Nazwa>czosnek 2 ząbki</Nazwa>
+      <Nazwa>natka pietruszki 3 łyżki</Nazwa>
+      <Nazwa>majonez 0.5 szklank</Nazwa>
+      <Nazwa>sól 1 łyżeczka</Nazwa>
+    </Skladniki>
+  </Przepis>
+</Salat>

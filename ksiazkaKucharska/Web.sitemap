@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Przepisy"  description="Przepisy">
+    <siteMapNode url="" title="Dania główne"  description="">
+          <siteMapNode url="MainDishes.aspx" title="Mięsne"  description="Przejdz do dań mięsnych." />
+          <siteMapNode url="VegetarianMainDishes.aspx" title="Wegetariańskie"  description="Przejdz do dań wegetariańskich." />
+    </siteMapNode>
+    <siteMapNode url="Salat.aspx" title="Sałatki"  description="" />
+    <siteMapNode url="Soup.aspx" title="Zupy"  description="" />
+    <siteMapNode url="" title="Desery"  description="">
+      <siteMapNode url="DessertsWarm.aspx" title="Na ciepło"  description="" />
+      <siteMapNode url="DessertsCold.aspx" title="Na zimno"  description="" />
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created: 2016-04-03 18:30:31-->
+<Soup>
+  <Przepis ID="1" Category="Zupy" Tytul="Pomidorowa">
+    <Wykonanie>
+      Pomidory z puszki zmiksuj. Przelej do wazy. Paprykę oczyść, pokrój w kosteczkę. Odbierz, posiekaj cebulę. Przygotowane składniki dodaj do pomidorów, przypraw Tabasco,
+      solą, papryką i pieprzem. Ochładzaj w lodówce około 30min. 
+      Bazylię drobno posiekaj. Utrzyj z twarożkiem. przypraw pieprzem. Uformuj maleńkie kuleczki, włóż do zupy. Podawaj z pieczywem.
+    </Wykonanie>
+    <Ilosc_porcji>6</Ilosc_porcji>
+    <Czas_przygotowania>30min</Czas_przygotowania>
+    <Skladniki>
+      <Nazwa>twaróg śmietanowy 0.3 kg</Nazwa>
+      <Nazwa>pomidor bez skórki 2 puszki</Nazwa>
+      <Nazwa>papryka żółta 2 sztuki</Nazwa>
+      <Nazwa>cebula 2 sztuki</Nazwa>
+      <Nazwa>bazylia</Nazwa>
+      <Nazwa>sól</Nazwa>
+    </Skladniki>
+  </Przepis>
+  <Przepis ID="2" Category="Zupy" Tytul="Rosół">
+    <Wykonanie>
+      Mięso wołowe i drobiowe moczymy ok. 1 godziny w zimnej wodzie i w osobnych garnkach.
+      Następnie dokładnie myjemy pod bieżącą wodą . Wkładamy do większego garnka i zagotowujemy z dodatkiem soli (gdy woda będzie już ciepła).
+      Należy pilnować, aby nie doprowadzić do silnego wrzenia tylko do "mrygania". Zdejmujemy łyżką cedzakową szumowiny.
+      Wrzucamy dobrze umutą uprzednio i obraną włoszczyznę. Ponownie zdjemujemy szumowinę. Teraz dodajemy pieprz oraz czuszkę. Gotujemy na bardzo małym ogniu.
+      Kurczaka oraz kostkę schabu wyjmujemy po 20 minutach. Dalej gotujemy, aż wołowina będzie miękka.
+      Na talerzu, posypujemy drobno posiekanym koperkiem oraz natką pietruszki.
+    </Wykonanie>
+    <Ilosc_porcji>4</Ilosc_porcji>
+    <Czas_przygotowania>45min</Czas_przygotowania>
+    <Skladniki>
+      <Nazwa>wołowina z kością 1kg</Nazwa>
+      <Nazwa>udko z kurczaka 1 sztuka</Nazwa>
+      <Nazwa>kurczak skrzydełka 2 sztuki</Nazwa>
+      <Nazwa>włoszczyzna 1 sztuka</Nazwa>
+      <Nazwa>koperek</Nazwa>
+      <Nazwa>sól</Nazwa>
+      <Nazwa>pieprz</Nazwa>
+    </Skladniki>
+  </Przepis>
+</Soup>

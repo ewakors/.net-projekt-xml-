@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created: 2016-04-03 18:30:31-->
+<MainDishes>
+  <Przepis ID="1" Category="Danie mięsne" Tytul="Baranina z curry">
+    <Wykonanie>Cebulę i marchew oczyścić i pokroić w talarki. Rozgrzać w szybkowarze tłuszcz i obrumienić na nim pokrojone na kawałki mięso. Wrzucić marchew i cebulę,kilka 
+    chwil smażyć, a następnie wlać tyle wody, by pokryła mięso. Wsypać curry, posolić i popieprzyć. Zamknąć szybkowar i ogrzewać 10 minut od momentu przekroczenia
+    progu ciśnienia wewnętrznego. Szybkowar otworzyć, wsypać ryż i po ponownym zamknięciu szybkowaru ogrzewać 15 minut od momentu przekroczenia progu ciśnienia wewnętrznego. </Wykonanie>
+    <Ilosc_porcji>4</Ilosc_porcji>
+    <Czas_przygotowania>35min</Czas_przygotowania>
+    <Skladniki>
+      <Nazwa>baranina bez kości 0.7 kg</Nazwa>
+      <Nazwa>olej 3 łyżki</Nazwa>
+      <Nazwa>cebula 4 sztuki</Nazwa>
+      <Nazwa>marchew 3 sztuki</Nazwa>
+      <Nazwa>ryż 0.5 szklank</Nazwa>
+      <Nazwa>curry 1 łyżeczka</Nazwa>
+    </Skladniki>
+  </Przepis>
+  <Przepis ID="2" Category="Danie mięsne" Tytul="Gołąbki">
+    <Wykonanie>
+      Obgotować liście kapusty, wkładając do wrzącej osolonej wody. Gdy stracą smak surowizny( po kilku minutach) odcedzić i zostawić 
+      do wystygnięcia.Mięso zemleć razem z uprzednio namoczonymi i lekko odciśniętymi bułkami. Cebulę posiekać drobno i podsmażyć na tłuszczu na lekko rumiano. 
+      Wymieszać wszystkie składniki nadzienia tj: bułkę mięso i cebulę dodaj do tego jajko i przyprawy. Liście rozkładać płasko, wycinać nerw, jeśli jest bardzo gruby i twardy.
+      Nakładać na nie farsz i zwijać w ruloniki. Gołąbki układać jeden obok drugiego w rondlu, podlać gorącym rosołem lub wodą, przykryć i dusić na małym ogniu. Jeżeli bardzo
+      odparują, dolać wody. Następnie przygotować zasmażkę z tłuszczu, rozmieszanego z mąką, leciutko ją podrumienić i rozprowadzić wywarem. Raz zagotować i doprawić do smaku 
+      solą, pieprzem i kwaskiem. Wymieszać z zieleniną i podawać gotowe gołąbki, ozdobione i ułożone na półmisku lub talerzach.
+    </Wykonanie>
+    <Ilosc_porcji>12</Ilosc_porcji>
+    <Czas_przygotowania>120min</Czas_przygotowania>
+    <Skladniki>
+      <Nazwa>mięso mielone wieprzowo- wołowei 0.3 kg</Nazwa>
+      <Nazwa>jajko 1 sztuka</Nazwa>
+      <Nazwa>cebula 1 sztuka</Nazwa>
+      <Nazwa>liść kapuściany 12 sztuk</Nazwa>
+      <Nazwa>sól</Nazwa>
+      <Nazwa>pieprz</Nazwa>
+    </Skladniki>
+  </Przepis>
+</MainDishes>

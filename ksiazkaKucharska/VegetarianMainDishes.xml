@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created: 2016-04-03 18:30:31-->
+<VegetarianMainDishes>
+  <Przepis ID="1" Category="Wegetariańskie" Tytul="Cannelloni ze szpinakiem ">
+    <Wykonanie>
+      Oczyszczony szpinak wrzucić na 3 minuty do wrzącej wody. Osączony, posiekać. oczyszczona cebule oraz czosnek posiekać i kapary też. Ser zetrzeć na tarce o dużych oczkach.
+      Połowę cebuli oraz czosnek zeszklić na maśle. Dodać szpinak, kapary i połowę sera. Mieszając, doprawić do smaku solą oraz pieprzem. Zdjąć z ognia.
+      Cannelloni napełnić farszem i ułożyć w wysmarowanej masłem formie do zapiekania. Polać sosem beszamelowym i posypać resztą sera. Zapiekać 40 minut w 200 stopniach.
+    </Wykonanie>
+    <Ilosc_porcji>4</Ilosc_porcji>
+    <Czas_przygotowania>80min</Czas_przygotowania>
+    <Skladniki>
+      <Nazwa>szpinak 1 kg</Nazwa>
+      <Nazwa>cebula 2 sztuki</Nazwa>
+      <Nazwa>czosnek 4 ząbki</Nazwa>
+      <Nazwa>kapary 2 łyżki</Nazwa>
+      <Nazwa>ser gołda 0.3kg</Nazwa>
+      <Nazwa>masło 0.2kg</Nazwa>
+      <Nazwa>cannelloni 20 sztuk</Nazwa>
+      <Nazwa>pieprz</Nazwa>
+      <Nazwa>sól</Nazwa>
+    </Skladniki>
+  </Przepis>
+  <Przepis ID="2" Category="Wegetariańskie" Tytul="Fasolowe kotlety ">
+    <Wykonanie>
+      Fasole ugotować.Ostudzić.Zemleć w maszynce.Dodać jajka.Podsmażyć cebulę pokrojoną w plasterki.Dodać do fasoli.Przyprawić.Formować kotlety,panierować w bułce i smażyć.
+    </Wykonanie>
+    <Ilosc_porcji>4</Ilosc_porcji>
+    <Czas_przygotowania>50min</Czas_przygotowania>
+    <Skladniki>
+      <Nazwa>fasola 0.5 kg</Nazwa>
+      <Nazwa>jajka 2 sztuki</Nazwa>
+      <Nazwa>tarta bułka 2 łyżki</Nazwa>
+      <Nazwa>olej 2 łyżki</Nazwa>
+      <Nazwa>pieprz</Nazwa>
+      <Nazwa>sól</Nazwa>
+    </Skladniki>
+  </Przepis>
+</VegetarianMainDishes>
