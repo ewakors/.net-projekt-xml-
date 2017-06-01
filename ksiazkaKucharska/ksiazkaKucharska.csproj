@@ -95,6 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Advice.aspx" />
+    <Content Include="App_Data\KitchenBookDatabase.mdf" />
+    <Content Include="App_Data\KitchenBookDatabase_log.ldf">
+      <DependentUpon>KitchenBookDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="DessertsCold.aspx" />
     <Content Include="DessertsWarm.aspx" />
     <Content Include="MainDishes.aspx" />
