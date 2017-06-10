@@ -7,6 +7,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h3 style="font-weight: normal; padding-top: 3%; margin:0; margin-left: 5%; font-family: 'Dosis', sans-serif; color:black; font-size: 2em;">Dania główne mięsne:</h3>
     <br/><br/>
+
+
     <asp:GridView style="float: left; color:black; margin-right: 10%; margin-left: 5%; " ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="ID" BorderColor="Black" BorderStyle="None" BorderWidth="0px" GridLines="Vertical" HorizontalAlign="Center" ShowFooter="True" Width="400px">
                 <AlternatingRowStyle BorderStyle="Solid" BorderWidth="0px" />
                 <Columns>
@@ -32,6 +34,8 @@
                 <PagerSettings Visible="False" />
                 <RowStyle BorderStyle="None" HorizontalAlign="Center" Wrap="True" />
             </asp:GridView>
+       <asp:DropDownList ID="DropDownListCategory" runat="server" DataSourceID="ObjectDataSourceCategory" DataTextField="Name" DataValueField="Id">
+    </asp:DropDownList>
        <asp:MultiView ID="MultiView1" runat="server" >
                 <asp:View ID="View1" runat="server">
                     <h3 style="font-weight: normal; margin:0; font-family: 'Dosis', sans-serif; color:black;font-size: 2em;">Przepis</h3>
@@ -89,6 +93,12 @@
             <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/MainDishes.xml"></asp:XmlDataSource>
 
             <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="~/MainDishes.xml"></asp:XmlDataSource>
+
+
+
+            <asp:ObjectDataSource ID="ObjectDataSourceCategory" runat="server" SelectMethod="SelectAllCategory" TypeName="ksiazkaKucharska.Components.CategoryDb"></asp:ObjectDataSource>
+
+
 
             <br />
         </div>

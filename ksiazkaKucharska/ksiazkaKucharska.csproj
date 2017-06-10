@@ -148,6 +148,8 @@
     <Compile Include="Advice.aspx.designer.cs">
       <DependentUpon>Advice.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CategoryDb.cs" />
+    <Compile Include="CategoryDetails.cs" />
     <Compile Include="DessertsCold.aspx.cs">
       <DependentUpon>DessertsCold.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +193,8 @@
       <DependentUpon>NewRecips.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeDb.cs" />
+    <Compile Include="RecipeDetails.cs" />
     <Compile Include="Recips.aspx.cs">
       <DependentUpon>Recips.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
