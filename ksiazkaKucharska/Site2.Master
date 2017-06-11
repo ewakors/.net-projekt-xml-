@@ -25,11 +25,12 @@
         <nav>
             <ul>
                 <li><a href="HomePage.aspx" class="animacja">Strona główna</a></li>
-                <li><a href="NewRecips.aspx" class="animacja">Nowości</a></li>              
-                <asp:Menu class="animacja" ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+                <li><a href="NewRecips.aspx" class="animacja">Nowości</a></li> 
+                <li><a href="MainDishes.aspx" class="animacja">Przepisy</a></li>              
+                <%--<asp:Menu class="animacja" ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
                    <DynamicHoverStyle BackColor="#004000" />
                    <DynamicSelectedStyle BackColor="#004000" />
-                </asp:Menu>
+                </asp:Menu>--%>
                 <li><a href="AddRecips.aspx" class="animacja">Dodaj przepis</a></li>
                 <li><a href="Advice.aspx" class="animacja">Porady</a></li>
                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" EnableViewState="False" />

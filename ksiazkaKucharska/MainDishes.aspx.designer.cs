@@ -31,49 +31,22 @@ namespace ksiazkaKucharska {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// MultiView1 control.
+        /// DetailsView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.MultiView MultiView1;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
         
         /// <summary>
-        /// View1 control.
+        /// ObjectDataSourceRecipe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View View1;
-        
-        /// <summary>
-        /// DetailsView2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsView2;
-        
-        /// <summary>
-        /// XmlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
-        
-        /// <summary>
-        /// XmlDataSource2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource2;
+        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSourceRecipe;
         
         /// <summary>
         /// ObjectDataSourceCategory control.
@@ -85,12 +58,39 @@ namespace ksiazkaKucharska {
         protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSourceCategory;
         
         /// <summary>
-        /// ObjectDataSourceRecipe control.
+        /// ObjectDataSourceRecipeDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSourceRecipe;
+        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSourceRecipeDetails;
+        
+        /// <summary>
+        /// ObjectDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource2;
+        
+        /// <summary>
+        /// GridView2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView2;
+        
+        /// <summary>
+        /// ObjectDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource1;
     }
 }

@@ -50,6 +50,26 @@ namespace ksiazkaKucharska.Components
             return categories;
         }
 
+        public void DeleteCategory(int Id)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand("Delete from Category where Id = @Id", con);
+            cmd.Parameters.Add("@Id", SqlDbType.Int).Value = Id;
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException err)
+            {
+                throw new ApplicationException("Category delete data error");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         IEnumerable<IDataRecord> GetFromReader(IDataReader reader)
         {
             while (reader.Read()) yield return reader;

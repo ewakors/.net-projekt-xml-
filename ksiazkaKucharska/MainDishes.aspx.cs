@@ -13,7 +13,17 @@ namespace ksiazkaKucharska
         {
 
         }
-
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            if (GridView1.SelectedRow == null)
+            {
+                DetailsView1.Visible = false;
+            }
+            else
+            {
+                DetailsView1.Visible = true;
+            }
+        }
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
 
@@ -39,6 +49,58 @@ namespace ksiazkaKucharska
             ObjectDataSourceRecipe.InsertParameters["Ingredient"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("TextBoxIndredient")).Text;
 
             ObjectDataSourceRecipe.Insert();
+        }
+
+        protected void GridView2_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow row = GridView1.SelectedRow;
+        }
+
+        protected void ObjectDataSourceRecipe_Selecting(object sender, ObjectDataSourceSelectingEventArgs e)
+        {
+
+           // e.InputParameters["Id"] = Id;
+        }
+
+        protected void ButtonAddUser3_Click(object sender, EventArgs e)
+        {
+            var parent = ((Control)sender).Parent;
+            var name = parent.FindControl("TextBoxName3") as TextBox;
+            var portion = parent.FindControl("TextBoxPortion3") as TextBox;
+            var time = parent.FindControl("TextBoxTime3") as TextBox;           
+            var category = parent.FindControl("DropDownListCategoryAdd3") as DropDownList;
+            var ingerdient = parent.FindControl("TextBoxIndredient3") as TextBox;
+
+            ObjectDataSourceRecipe.InsertParameters["Name"].DefaultValue = name.Text;
+            ObjectDataSourceRecipe.InsertParameters["Portion"].DefaultValue = portion.Text;
+            ObjectDataSourceRecipe.InsertParameters["TimeBuild"].DefaultValue = time.Text;
+            ObjectDataSourceRecipe.InsertParameters["Category_Id"].DefaultValue = category.Text;
+            ObjectDataSourceRecipe.InsertParameters["Ingredient"].DefaultValue = ingerdient.Text;
+
+            ObjectDataSourceRecipe.Insert();
+        }
+
+        protected void DetailsView1_ItemInserting(object sender, DetailsViewInsertEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
+        }
+
+        protected void DetailsView1_ItemDeleting(object sender, DetailsViewDeleteEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
+        }
+
+        protected void DetailsView1_ItemUpdating(object sender, DetailsViewUpdateEventArgs e)
+        {
+            GridView1.DataBind();
+            GridView1.SelectRow(-1);
         }
         //protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         //{

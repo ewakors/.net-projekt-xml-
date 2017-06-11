@@ -56,26 +56,27 @@ namespace ksiazkaKucharska.Components
 
         public RecipeDetails SelectRecipeById(int Id)
         {
-            SqlConnection con = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("recipe_select_by_id", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int, 4));
-            cmd.Parameters["@Id"].Value = Id;
-            SqlDataReader reader;
+           // Id = 15;
+            CategoryDb categoryDb = new CategoryDb();
+            List<CategoryDetails> categories = categoryDb.SelectAllCategory();
             RecipeDetails recipe = new RecipeDetails();
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand("SELECT r.Id, r.Name, r.Realization, r.Portion, r.TimeBuild, r.Ingredient,r.Category_Id, c.Name From Category c Inner Join Recipe r on c.Id = r.Category_Id Where r.Id= @Id", con);
+            cmd.Parameters.Add("@Id", SqlDbType.Int).Value = Id;
+            SqlDataReader reader;
             try
             {
-                con.Open();
-                reader = cmd.ExecuteReader();
-                foreach (IDataRecord record in GetFromReader(reader))
-                {
-                    recipe = new RecipeDetails((int)record[0], record[1].ToString(), record[2].ToString(), (int)record[3], record[4].ToString());
-                }
-
+                    con.Open();
+                    reader = cmd.ExecuteReader();
+                    foreach (IDataRecord record in GetFromReader(reader))
+                    {
+                    CategoryDetails category = categories.Where(c => c.Id == Int32.Parse(record[6].ToString())).Single();
+                    recipe = new RecipeDetails((int)record[0], record[1].ToString(), record[2].ToString(), (int)record[3], record[4].ToString(), record[5].ToString(), category.Name, category.Id);
+                }            
             }
-            catch (SqlException err)
+            catch
             {
-                throw new ApplicationException("Recipe select by id data error.");
+                throw new ApplicationException("Recipe by id data error.");
             }
             finally
             {
@@ -87,7 +88,7 @@ namespace ksiazkaKucharska.Components
         public DataSet SelectAllRecipesByCategoryId(int Category_Id)
         {
 
-            string query = "SELECT * FROM Category c inner join Recipe r on c.Id = r.Category_Id Where ([Category_Id] = @Category_Id)";
+            string query = "SELECT r.Id, r.Name, r.Realization, r.Portion, r.TimeBuild, r.Ingredient,r.Category_Id, c.Name FROM Category c inner join Recipe r on c.Id = r.Category_Id Where ([Category_Id] = @Category_Id)";
 
             SqlConnection con = new SqlConnection(connectionString);
             SqlCommand com = new SqlCommand(query, con);
@@ -151,7 +152,7 @@ namespace ksiazkaKucharska.Components
             cmd.Parameters.Add(new SqlParameter("@TimeBuild", SqlDbType.VarChar, 50));
             cmd.Parameters.Add(new SqlParameter("@Ingredient", SqlDbType.VarChar, 500));
             cmd.Parameters.Add(new SqlParameter("@Portion", SqlDbType.VarChar, 500));
-            cmd.Parameters.Add(new SqlParameter("@Category_Id", SqlDbType.VarChar, 500));
+            cmd.Parameters.Add(new SqlParameter("@Category_Id", SqlDbType.Int, 5));
             cmd.Parameters["@Id"].Value = Id;
             cmd.Parameters["@Name"].Value = Name;
             cmd.Parameters["@TimeBuild"].Value = TimeBuild;
@@ -166,7 +167,7 @@ namespace ksiazkaKucharska.Components
             }
             catch (SqlException err)
             {
-                throw new ApplicationException("Recipe update data error.");
+                //throw new ApplicationException("Recipe update data error.");
             }
             finally
             {
@@ -174,6 +175,39 @@ namespace ksiazkaKucharska.Components
             }
         }
 
+        public void UpdateRecipeDetails(int Id, string Name, string TimeBuild, string Ingredient, int Category_Id, int Portion, string Realization)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand("recipe_update", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int, 4));
+            cmd.Parameters.Add(new SqlParameter("@Name", SqlDbType.VarChar, 50));
+            cmd.Parameters.Add(new SqlParameter("@TimeBuild", SqlDbType.VarChar, 50));
+            cmd.Parameters.Add(new SqlParameter("@Ingredient", SqlDbType.VarChar, 500));
+            cmd.Parameters.Add(new SqlParameter("@Portion", SqlDbType.VarChar, 500));
+            cmd.Parameters.Add(new SqlParameter("@Category_Id", SqlDbType.Int, 5));
+            cmd.Parameters["@Id"].Value = Id;
+            cmd.Parameters["@Name"].Value = Name;
+            cmd.Parameters["@TimeBuild"].Value = TimeBuild;
+            cmd.Parameters["@Ingredient"].Value = Ingredient;
+            cmd.Parameters["@Portion"].Value = Portion;
+            cmd.Parameters["@Category_Id"].Value = Category_Id;
+            cmd.Parameters["@Realization"].Value = "Realization";
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException err)
+            {
+                //throw new ApplicationException("Recipe update data error.");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         public void DeleteRecipe(int Id)
         {
             //SqlConnection con = new SqlConnection(connectionString);
