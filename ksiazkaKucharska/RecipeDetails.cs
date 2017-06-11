@@ -11,11 +11,11 @@ namespace ksiazkaKucharska.Components
         public string Name { get; set; }
         public string Realization { get; set; }
         public int Portion { get; set; }
-        public string Time { get; set; }
+        public string TimeBuild { get; set; }
         public string Category { get; set; }
         public int Category_Id { get; set; }
         public string Ingredient { get; set; }
-        public int Ingredient_Id { get; set; }
+       // public int Ingredient_Id { get; set; }
 
         public RecipeDetails() { }
 
@@ -25,20 +25,20 @@ namespace ksiazkaKucharska.Components
             Name = name;
             Realization = realization;
             Portion = portion;
-            Time = time;
+            TimeBuild = time;
         }
 
-        public RecipeDetails(int id, string name, string realization, int portion, string time, string category, int category_id,string ingredient, int ingredient_id)
+        public RecipeDetails(int id, string name, string realization, int portion, string time, string ingredient, string category, int category_id)
         {
             Id = id;
             Name = name;
             Realization = realization;
             Portion = portion;
-            Time = time;
+            TimeBuild = time;
             this.Category = category;
             this.Category_Id = category_id;
             this.Ingredient = ingredient;
-            this.Ingredient_Id = ingredient_id;
+           // this.Ingredient_Id = ingredient_id;
         }
     }
 }
