@@ -85,19 +85,20 @@ namespace ksiazkaKucharska
             ObjectDataSourceRecipe.Insert();
         }
 
-        protected void DetailsView1_ItemInserting(object sender, DetailsViewInsertEventArgs e)
+
+        protected void DetailsView1_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
         {
             GridView1.DataBind();
             GridView1.SelectRow(-1);
         }
 
-        protected void DetailsView1_ItemDeleting(object sender, DetailsViewDeleteEventArgs e)
+        protected void DetailsView1_ItemDeleted(object sender, DetailsViewDeletedEventArgs e)
         {
             GridView1.DataBind();
             GridView1.SelectRow(-1);
         }
 
-        protected void DetailsView1_ItemUpdating(object sender, DetailsViewUpdateEventArgs e)
+        protected void DetailsView1_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
         {
             GridView1.DataBind();
             GridView1.SelectRow(-1);

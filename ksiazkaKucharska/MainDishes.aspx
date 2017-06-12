@@ -187,9 +187,9 @@
     <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="1246px" 
         AutoGenerateRows="False" 
         DataSourceID="ObjectDataSource1"
-         OnItemInserting="DetailsView1_ItemInserting"
-         OnItemDeleting="DetailsView1_ItemDeleting"
-         OnItemUpdating="DetailsView1_ItemUpdating"
+         OnItemInserted="DetailsView1_ItemInserted"
+         OnItemDeleted="DetailsView1_ItemDeleted"
+         OnItemUpdated="DetailsView1_ItemUpdated"
          DataKeyNames="Id" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black"
         >
         <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
@@ -285,7 +285,7 @@
                     <asp:Label ID="Label8" runat="server" Text='<%# Bind("Ingredient") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="" SortExpression="">
+         <%--   <asp:TemplateField HeaderText="" SortExpression="">
                 <EditItemTemplate>
                         <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Update" ForeColor="Black"></asp:LinkButton>
                         &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" ForeColor="Black"></asp:LinkButton>
@@ -296,7 +296,9 @@
                         <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" ForeColor="Black"></asp:LinkButton>
                         &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" ForeColor="Black"></asp:LinkButton>
                     </ItemTemplate>
-            </asp:TemplateField>
+            </asp:TemplateField>--%>
+            
+            <asp:CommandField ShowInsertButton="True" ShowDeleteButton="True" ShowEditButton="True" />
             
         </Fields>
         <FooterStyle BackColor="#CCCCCC" />
